@@ -33,20 +33,30 @@ It wrote the code, ran away, and now the game is unplayable.
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. User selects Normal difficulty.
+2. User enters a guess of 40.
+3. Game responds with "Too Low" and displays "Go HIGHER!"
+4. User enters a guess of 70.
+5. Game responds with "Too High" and displays "Go LOWER!"
+6. User continues guessing while the score updates after each attempt.
+7. User enters the correct number.
+8. Game displays a winning message, shows the final score, and ends the game.
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 
 ## 🧪 Test Results
 
 ```
-# Paste your pytest output here, e.g.:
-# pytest tests/
-# ========================= X passed in 0.XXs =========================
+==================================== test session starts ====================================
+platform win32 -- Python 3.14.2, pytest-9.1.1, pluggy-1.6.0
+rootdir: K:\ai110-module1show-gameglitchinvestigator-starter
+plugins: anyio-4.13.0
+collected 5 items                                                                            
+
+tests\test_game_logic.py .....                                                         [100%]
+
+===================================== 5 passed in 0.05s =====================================
+
 ```
 
 ## 🚀 Stretch Features
